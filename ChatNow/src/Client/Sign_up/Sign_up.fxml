@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Pane" prefHeight="400.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Sign_up.signupController">
+   <children>
+      <Label layoutX="60.0" layoutY="36.0" text="欢迎加入ChatNow">
+         <font>
+            <Font name="Microsoft YaHei Light" size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="30.0" layoutY="83.0" prefHeight="302.0" prefWidth="268.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="用户名">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameTextFiled" layoutX="14.0" layoutY="42.0" prefHeight="39.0" prefWidth="240.0" promptText="username">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="89.0" text="密码">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="14.0" layoutY="118.0" prefHeight="39.0" prefWidth="240.0" promptText="password">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="signUpButton" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" onAction="#signUpCheck" prefHeight="39.0" prefWidth="240.0" stylesheets="@Sign_up.css" text="立即注册" />
+            <Label layoutX="14.0" layoutY="167.0" text="确认密码">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="confirmPasswordField" layoutX="14.0" layoutY="196.0" prefHeight="39.0" prefWidth="240.0" promptText="confirm password">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

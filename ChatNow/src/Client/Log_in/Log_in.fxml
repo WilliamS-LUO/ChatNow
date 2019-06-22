@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Pane" prefHeight="450.0" prefWidth="350.0" style="-fx-boder-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Log_in.loginController">
+    <children>
+        <Label layoutX="101.0" layoutY="76.0" text="登录ChatNow">
+            <font>
+                <Font name="Microsoft YaHei Light" size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="38.0" layoutY="116.0" prefHeight="251.0" prefWidth="275.0" style="-fx-background-color: white;">
+            <children>
+                <TextField fx:id="userNameTextFiled" layoutX="17.0" layoutY="54.0" prefHeight="39.0" prefWidth="242.0" promptText="username">
+                    <font>
+                        <Font size="19.0" />
+                    </font></TextField>
+                <PasswordField fx:id="passwordField" layoutX="17.0" layoutY="143.0" prefHeight="39.0" prefWidth="242.0" promptText="password">
+                    <font>
+                        <Font size="19.0" />
+                    </font></PasswordField>
+                <Button fx:id="logInButton" layoutX="17.0" layoutY="197.0" mnemonicParsing="false" onAction="#logInButtonClicked" prefHeight="39.0" prefWidth="242.0" stylesheets="@Login.css" text="登录" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font></Button>
+                <Label layoutX="17.0" layoutY="113.0" text="密码">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Hyperlink layoutX="172.0" layoutY="109.0" prefHeight="32.0" prefWidth="103.0" text="忘记密码？">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Hyperlink>
+                <Label layoutX="17.0" layoutY="25.0" text="用户名">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Pane>
+        <Pane layoutX="42.0" layoutY="367.0" prefHeight="55.0" prefWidth="275.0">
+            <children>
+                <Label layoutX="50.0" layoutY="16.0" text="ChatNow新手？" />
+                <Hyperlink layoutX="137.0" layoutY="13.0" onAction="#createAccountLabelClicked" text="创建一个账户" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
